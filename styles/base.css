@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Subrayada:wght@400;700&display=swap');
 :root {
-    --primary-color: #5E3FB3;
-    --secondary-color: #261450;
-    --accent1-color: #c4c1d3;
+    --primary-color: #7257c2;
+    --secondary-color: #150933;
+    --accent1-color: #e6e6e6;
     --accent2-color: #89C8F5;
     --heading-font: 'Montserrat Subrayada';
     --paragraph-font: 'Josefin Sans';
@@ -124,13 +122,6 @@ main {
     border: var(--primary-color) 2px solid;
     border-radius: 10px;
     background-color: #fff;
-}
-
-.card_right {
-    border: var(--primary-color) 2px solid;
-    border-radius: 10px;
-    background-color: #fff;
-    max-width: 600px;
 }
 
 .img_inline {
