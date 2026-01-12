@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Subrayada:wght@400;700&display=swap');
 :root {
     --primary-color: #5E3FB3;
-    --secondary-color: #371C77;
-    --accent1-color: #BCB3E4;
+    --secondary-color: #261450;
+    --accent1-color: #c4c1d3;
     --accent2-color: #89C8F5;
     --heading-font: 'Montserrat Subrayada';
     --paragraph-font: 'Josefin Sans';
@@ -21,7 +21,7 @@
   font-weight: 350;
 }
 
-h1, h2, h4, h5 {
+h1, h4, h5 {
     color: var(--secondary-color);
     font-family: var(--heading-font);
     font-weight: 600;
@@ -29,7 +29,7 @@ h1, h2, h4, h5 {
     text-align: center;
 }
 
-h3 {
+h2 {
     font-family: var(--heading-font);
     font-weight: 600;
     color: var(--accent1-color);
@@ -39,16 +39,13 @@ h3 {
     text-align: center;
 }
 
-h4 {
+h3 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--secondary-color);
     border-top: dotted var(--secondary-color) 1px;
     padding-top: 20px;
-}
-
-h6 {
-    font-family: var(--paragraph-font);
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 10px;
+    text-align: center;
 }
 
 p {
@@ -124,13 +121,13 @@ main {
 }
 
 .card {
-    border: var(--primary-color), 2px, solid;
+    border: var(--primary-color) 2px solid;
     border-radius: 10px;
     background-color: #fff;
 }
 
 .card_right {
-    border: var(--primary-color), 2px, solid;
+    border: var(--primary-color) 2px solid;
     border-radius: 10px;
     background-color: #fff;
     max-width: 600px;
