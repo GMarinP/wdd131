@@ -147,6 +147,15 @@ main {
     margin-bottom: 20px;
 }
 
+#course-title {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-weight: 600;
+    font-size: 50px;
+    padding: 2px;
+    text-align: center;
+}
+
 
 
 
