@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #7257c2;
+    --secondary-color: #150933;
+    --accent1-color: #ececec;
+    --accent2-color: #89C8F5;
+    --heading-font: 'Montserrat Subrayada';
+    --paragraph-font: 'Josefin Sans';
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--accent1-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color:var(--accent1-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--paragraph-font);
+  font-weight: 350;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--secondary-color);
+ 	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+.navigation {
+    background-color: var(--nav-background-color);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation a {
+    color: var(--nav-link-color);
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.open a {
+	display: block;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main figure { 
+    gap: 1rem;                    
+    padding: 1rem;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: 1fr;
+	grid-gap: 25px;
+	place-items: center;
+}
+
+img {
+    max-height: 200px;
+    width: auto;
+    padding: 0px;
+    border: solid #000 1px;
+    margin: 10px;
+}
+
+img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+footer {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+
+
+@media (min-width: 600px) {
+    #photos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+    .navigation {
+		flex-direction: row;
+	}
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+}
