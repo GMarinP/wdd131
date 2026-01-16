@@ -1,6 +1,6 @@
 :root {
     --primary-color: #7257c2;
-    --secondary-color: #150933;
+    --secondary-color: #100727;
     --accent1-color: #ececec;
     --accent2-color: #89C8F5;
     --heading-font: 'Montserrat Subrayada';
@@ -25,6 +25,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     padding: 2px;
     text-align: center;
+}
+
+header p {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+    font-size: 40px;
 }
 
 body {
@@ -61,6 +70,7 @@ header {
 nav {
     max-width: 700px;
     margin: 1rem auto;
+    display: flex;
 }
 
 .navigation {
