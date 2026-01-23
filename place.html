@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is the page about the country I live.">
+        <meta name="description" content="This is the page where I show images and facts about the country I live, Italy">
         <meta name="author" content="Giovanna Marin Pereira">
         <link rel="stylesheet" href="styles/place.css">
         <script src="scripts/place.js" defer></script>
@@ -11,22 +11,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-        <title>WDD 131 | Dynamic Web Fundamentals | Giovanna Marin Pereira</title>
+        <title>Italy</title>
     </head>
     <body>
         <header>
             <h1>ITALY</h1>
         </header>
         <main>
-            <hero class="hero">
+            <div class="hero">
                 <picture class="photos">
                     <source media="(min-width: 600px)" srcset="images/italy-large.webp">
-                    <img src="images/italy-small.webp" alt="A picture of the Salt Lake Temple" width="480" height="620">
+                    <img src="images/italy-small.webp" alt="The view of Portofino, a city in Italy with the coast and many houses stacked on top of each other" width="480" height="620">
                 </picture>
-            </hero>
+            </div>
             <div class="data">
                 <h2>Data</h2>
-                <ul id="label">
+                <ul id="labelData">
                     <li>Area:&nbsp;</li>
                     <li>Population:&nbsp; </li>
                     <li>Capital:&nbsp; </li>
@@ -36,7 +36,7 @@
                     <li>Calling Code:&nbsp; </li>
                     <li>Internet TLD:&nbsp; </li>
                 </ul>
-                <ul id="value">
+                <ul id="valueData">
                     <li>302,073 sq km </li>
                     <li>58,915,561</li>
                     <li>Rome</li>
@@ -49,14 +49,14 @@
             </div>
             <div class="weather">
                 <h2>Weather&nbsp;
-                <img src="images/weather-icon.svg" class="weather-icon" alt=""></h2>
-                  <ul id="label">
+                <img src="images/weather-icon.svg" class="weather-icon" alt="An icon of a sun covered by clouds, simbolysing the weather"></h2>
+                  <ul id="labelWeather">
                     <li>Temperature:&nbsp; </li>
                     <li>Conditions:&nbsp; </li>
                     <li>Wind:&nbsp; </li>
                     <li>Wind Chill:&nbsp; </li>
                 </ul>
-                <ul id="value">
+                <ul id="valueWeather">
                     <li>13°C </li>
                     <li>Partly cloudy</li>
                     <li>3 km/h</li>
