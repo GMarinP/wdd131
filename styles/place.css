@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #008c45;
+    --secondary-color: #cd212a;
+    --accent1-color: #f4f9ff;
+    --accent2-color: #89C8F5;
+    --heading-font: 'Montserrat Subrayada';
+    --paragraph-font: 'Josefin Sans';
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--accent1-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color:var(--accent1-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    font-weight: 350;
+}
+
+h1 {
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: var(--accent1-color) 25px solid;
+}
+main {
+    border-top: var(--secondary-color) 25px solid;
+    border-bottom: var(--secondary-color) 25px solid;
+}
+.photos {
+   display: flex;
+   justify-content: center;
+   border-bottom: var(--secondary-color) 5px solid;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.data h2 {
+    grid-column: span 2;
+}
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.weather h2 {
+    grid-column: span 2;
+}
+.weather-icon {
+    grid-column: span 2;
+    display: block;
+    margin: 0 auto;
+    width: 40px; 
+}
+
+#label {
+    text-align: right;
+}
+#value {
+    text-align: left;
+}
+
+footer {
+    border-top: var(--accent1-color) 25px solid;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+.hero {
+    position: relative;
+}
+.photos {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.photos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.data, .weather {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.85); 
+    padding: 1rem;
+    border-radius: 8px;
+    width: 350px; 
+    z-index: 5; 
+}
+.data {
+    top: 150px;
+    left: 20px;
+}
+.weather {
+    top: 450px;
+    right: 20px;
+} 
+.weather-icon {
+    display: inline;
+    margin: 0 auto;
+    width: 40px;
+}
+}
+
+@media (min-width: 1000px) {
+.weather {
+    top: 600px;
+    right: 20px;
+}
+}
