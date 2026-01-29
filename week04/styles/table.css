@@ -1,0 +1,7 @@
+table {
+	margin: 10px auto;
+	border: thin solid black;
+	box-shadow: 0 0 10px grey;
+	border-collapse: collapse;
+}
+

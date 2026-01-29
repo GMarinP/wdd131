@@ -1,0 +1,16 @@
+main {
+    display: grid;
+    padding: 1em;
+
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+img {
+  opacity: 0;
+  animation: fade 5s;
+  background-color: black;
+}
