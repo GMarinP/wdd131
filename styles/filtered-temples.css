@@ -111,7 +111,7 @@ main {
 
 #templeCards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	grid-gap: 25px;
 	place-items: center;
 }
@@ -119,7 +119,7 @@ main {
 section {
     border: solid #000 1px;
     background-color: rgb(236, 236, 236);
-    width: 500px;
+    width: 400px;
     height: 400px;
     padding: 20px;
     justify-items: center;
