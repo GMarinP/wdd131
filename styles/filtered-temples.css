@@ -126,7 +126,7 @@ section {
 }
 
 img {
-    max-height: auto;
+    height: auto;
     width: 90%;
     padding: 0px;
     border: solid #000 1px;
