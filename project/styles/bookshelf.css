@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #937666;
+    --secondary-color: #341C1C;
+    --accent1-color: #F6E4F6;
+    --accent2-color: #7CAE7A;
+    --accent3-color: #232E21;
+    --heading-font: 'Inconsolata', monospace;
+    --paragraph-font: 'Montserrat', sans-serif;
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--secondary-color);
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color:var(--accent3-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    font-weight: 350;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+}
+
+p, li {
+    padding: 4px;
+    margin-left: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+main {
+    background-color: var(--accent1-color);
+}
+
+div {
+    margin-top: 5%;
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.scenarios {
+    text-align: center;
+}
+
+.color-schema li {
+    margin-left: 2em;
+}
+
+.typography {
+    margin-bottom: 5%;
+}
+
+
+@media (min-width: 800px) {
+    p, li {
+        margin: 0;
+        padding: 0;
+    }
+    div {
+        text-align: center;
+    }
+}
