@@ -64,6 +64,14 @@ footer p, span {
     padding: .5rem 2%;
 }
 
+.form div {
+    display: block;
+    padding: 1rem;
+    padding-bottom: 0;
+    color: var(--secondary-color);
+    font-size: .9rem;
+}
+
 .form label {
     display: block;
     padding: 1rem;
