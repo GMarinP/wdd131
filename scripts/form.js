@@ -30,6 +30,19 @@ const products = [
   }
 ];
 
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+
+const select = document.querySelector("#product_name");
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = capitalize(product.name);
+    select.appendChild(option);
+});
+
 
 const reviewsDisplay = document.querySelector(".review");
 
