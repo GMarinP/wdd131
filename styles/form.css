@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #937666;
+    --secondary-color: #341C1C;
+    --accent1-color: #FFFCF9;
+    --accent2-color: #7CAE7A;
+    --accent3-color: #232E21;
+    --heading-font: 'Inconsolata', monospace;
+    --paragraph-font: 'Montserrat', sans-serif;
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--accent1-color);
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color:var(--accent3-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    font-weight: 350;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+}
+
+p {
+    padding: 4px;
+    margin-left: 5px;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    background-color: var(--accent1-color);
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+footer p, span {
+   font-family: var(--heading-font); 
+}
+
+.form fieldset{
+    margin: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.form label {
+    display: block;
+    padding: 1rem;
+    color: var(--secondary-color);
+    font-size: .9rem;
+    
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form select, 
+.form textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--accent2-color), var(--accent3-color));
+    color: var(--accent1-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
