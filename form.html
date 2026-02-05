@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is the form page for a product review. ">
+        <meta name="description" content="This is the page for a product review form that leads to a thank you page when completed. ">
         <meta name="author" content="Giovanna Marin Pereira">
         <link rel="stylesheet" href="styles/form.css">
         <script src="scripts/form.js" defer></script>
@@ -21,16 +21,16 @@
                 <fieldset>
                     <label>Product Name* 
                         <select name="product" id="product_name" required>
-                            <option value="">Select a Product... </option>
+                            <option value="" disabled selected>Select a Product... </option>
                         </select>
                     </label>    
 
                     <div>Overall Rating*</div>
-                    <label><input type="radio" name="rating" value="1" required>&star;</label>
-                    <label><input type="radio" name="rating" value="2" required>&star;&star;</label>
-                    <label><input type="radio" name="rating" value="3" required>&star;&star;&star;</label>
-                    <label><input type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
-                    <label><input type="radio" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="1" id="rating" required>&star;</label>
+                    <label><input type="radio" name="rating" value="2" id="rating" required>&star;&star;</label>
+                    <label><input type="radio" name="rating" value="3" id="rating" required>&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="4" id="rating" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="5" id="rating" required>&star;&star;&star;&star;&star;</label>
                     
 
                     <label>Date of Installation* <input type="date" name="installationDate" id="date" required></label>
@@ -57,3 +57,4 @@
             <p id="lastModified"></p>
         </footer>
     </body>
+</html>
