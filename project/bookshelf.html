@@ -15,7 +15,8 @@
     <body>
         <header>
             <h1>the bookshelf</h1>
-            <nav>
+            <button type="button" id="menu" aria-label="Menu"></button>
+            <nav class="navigation">
                 <a href="bookshelf.html">Home</a>
                 <a href="explore.html">Explore</a>
                 <a href="my-shelf.html">My Shelf</a>
@@ -23,8 +24,17 @@
             </nav>
         </header>
         <main>
-
-
+            <section class="hero">
+                <h2>welcome to the bookshelf</h2>
+                <p>This website is made by bookworms for bookworms. We can share our favorite recommendations and look through other reviews to find new books! There is also a random book picker for those of us who can't decide what to read from our TBR. Thank you to all the editors and the users who spend their time sharing what they love most. </p>
+                <img loading="lazy" src="images/portrait-library.jpg" alt="A photo of a long corridor with many tall bookshelves accross two floors.">
+            </section>
+            <section class="callToExplore">
+                <h2>do you want to find new books?</h2>
+                <img loading="lazy" src="images/library.jpg" alt="A photo of a corridor between two tall bookshelves.">
+                <p>We have a page where you can look through reviews made by our editors and other users. You are also able to make your own reviews for the books you love or like a little less. </p>
+                <button type="button" id="explore">Take me there!</button>
+            </section>
         </main>
         <footer>
             <p>©<span id="currentYear"></span>&nbsp;| Giovanna Marin Pereira | Italy</p>

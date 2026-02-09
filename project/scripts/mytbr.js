@@ -1,7 +1,3 @@
-console.log(document.lastModified)
-document.getElementById("lastModified").innerHTML = document.lastModified;
-document.getElementById("currentYear").textContent = new Date().getFullYear();
-
 const input = document.querySelector('#wantToRead');
 const button = document.querySelector('#button');
 const list = document.querySelector('#list');
