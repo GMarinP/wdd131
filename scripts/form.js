@@ -44,16 +44,3 @@ products.forEach(product => {
 });
 
 
-const reviewsDisplay = document.querySelector(".review");
-
-let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-
-if (numReviews !== 0) {
-	reviewsDisplay.textContent = numReviews;
-} else {
-	reviewsDisplay.textContent = `This is your first review. 🥳 Welcome!`;
-}
-
-numReviews++;
-
-localStorage.setItem("numReviews-ls", numReviews);

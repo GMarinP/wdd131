@@ -46,7 +46,7 @@ main {
 
 footer {
     background: var(--primary-color);
-    color: var(--accent1-color);
+    color: white;
     font-family: var(--heading-font);
     padding: 1rem;
     display: block;
