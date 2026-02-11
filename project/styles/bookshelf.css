@@ -105,11 +105,13 @@ footer {
 
 /*----------- HOME PAGE --------------*/
 
+
 .hero {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     padding: 1rem;
-    max-width: fit-content;
+    max-width: 100%;
     margin: 5%;
     gap: 20px;
     border: var(--primary-color) 2px solid;
@@ -118,12 +120,13 @@ footer {
     justify-content: center;
 }
 
-.hero h2 {
-    grid-column: span 2;
-}
-
 .hero img {
-    max-height: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    max-height: 300px; 
+    object-fit: contain;
 }
 
 .callToExplore {
@@ -141,10 +144,15 @@ footer {
 
 .callToExplore img {
     grid-row: span 3;
-    max-height: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    max-height: 300px; 
+    object-fit: contain
 }
 
-#explore {
+#button {
     border: none;
     background-color: var(--accent3-color);
     color: var(--accent2-color);
@@ -152,9 +160,112 @@ footer {
     padding: .8rem;
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
+    max-width: 250px;
+    max-height: fit-content;
 }
 
+.callMyShelf {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    max-width: fit-content;
+    margin: 5%;
+    gap: 20px;
+    border: var(--primary-color) 2px solid;
+    border-radius: 10px;
+    background-color: var(--accent1-color);
+    justify-content: center;
 
+}
+
+.callMyShelf img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    max-height: 300px; 
+    object-fit: contain
+}
+
+.callMyTBR {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    max-width: 100%;
+    margin: 5%;
+    gap: 20px;
+    border: var(--primary-color) 2px solid;
+    border-radius: 10px;
+    background-color: var(--accent1-color);
+    justify-content: center;
+}
+
+.callMyTBR img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    max-height: 300px; 
+    object-fit: contain
+}
+
+/*----------- MY TBR --------------*/
+.tbr {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    margin: 5%;
+    border: var(--primary-color) 2px solid;
+    border-radius: 10px;
+    background-color: var(--accent1-color);
+    justify-content: center;
+}
+
+input[type="text"] {
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+}
+
+.tbr ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.delete {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*----------- MY SHELF --------------*/
+.shelf {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    margin: 5%;
+    border: var(--primary-color) 2px solid;
+    border-radius: 10px;
+    background-color: var(--accent1-color);
+    justify-content: center;
+}
+
+.shelf ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
 
 
 /*----------- SITE PLAN --------------*/
@@ -183,9 +294,19 @@ footer {
 
 
 /*----------- MEDIA QUERIES --------------*/
+@media (min-width: 800px) {
+    .hero {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .hero h2 {
+        grid-column: span 2;
+    }
+}
+
 @media (min-width: 600px) {
     #menu {
-		display: none; /* hide hamburger button */
+		display: none; 
 	}
     .navigation {
 		flex-direction: row;
@@ -195,3 +316,5 @@ footer {
 		flex: 1 1 100%;
 	}
 }
+
+
