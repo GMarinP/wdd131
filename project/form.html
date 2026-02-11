@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the page for a product review form that leads to a thank you page when completed. ">
+        <meta name="author" content="Giovanna Marin Pereira">
+        <link rel="stylesheet" href="styles/bookshelf.css">
+        <script src="scripts/bookshelf.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Product Review Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>the bookshelf</h1>
+            <button type="button" id="menu" aria-label="Menu"></button>
+            <nav class="navigation">
+                <a href="bookshelf.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="my-shelf.html">My Shelf</a>
+                <a href="my-tbr.html">My TBR</a>
+            </nav>
+        </header>
+        <main>
+            <form method="get" action="review.html" class="form">
+                <fieldset>  
+
+                    <label>Book Tile*<input type="text" name="fname" id="userName" required></label>
+
+                    <p>Overall Rating*</p>
+                    <label><input type="radio" name="rating" value="1" id="1" required>&star;</label>
+                    <label><input type="radio" name="rating" value="2" id="2" required>&star;&star;</label>
+                    <label><input type="radio" name="rating" value="3" id="3" required>&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="4" id="4" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="5" id="5" required>&star;&star;&star;&star;&star;</label>
+
+                    <label>Written Review*<textarea id="review" name="review" required></textarea></label>
+                
+                    <input type="submit" value="Post Review">
+                </fieldset>
+            </form>   
+        </main>
+        <footer>
+            <p>©<span id="currentYear"></span>&nbsp;| Giovanna Marin Pereira | Italy</p>
+            <br>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
