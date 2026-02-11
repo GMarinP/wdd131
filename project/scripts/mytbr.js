@@ -1,5 +1,5 @@
 const input = document.querySelector('#wantToRead');
-const button = document.querySelector('#button');
+const button = document.querySelector('#addButton');
 const list = document.querySelector('#list');
 
 let newBooksArray = getNewBooksList() || [];
@@ -54,3 +54,22 @@ button.addEventListener('click', () => {
         input.focus();   
     }
 });
+
+const randomButton = document.querySelector('#randomButton');
+const randomBookText = document.querySelector("#randomBookText");
+
+randomButton.addEventListener('click', () => {
+    if (newBooksArray.length != 0){
+        randomBook(newBooksArray);
+        
+    }
+    else {
+        alert('Please enter a book first');  
+        input.focus();
+    }
+});
+
+function randomBook(booksArray) {
+    let number = Math.floor(Math.random() * booksArray.length)
+    randomBookText.textContent = `This should be your next read: ${booksArray[number]}.`;
+}

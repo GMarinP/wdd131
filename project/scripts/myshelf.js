@@ -1,5 +1,5 @@
 const input = document.querySelector('#bookRead');
-const button = document.querySelector('#button');
+const button = document.querySelector('#addButton');
 const list = document.querySelector('#list');
 
 let booksArray = getBooksList() || [];
