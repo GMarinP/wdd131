@@ -54,7 +54,7 @@ p {
 
 footer {
     background: var(--primary-color);
-    color: var(--accent1-color);
+    color: white;
     padding: 1rem;
     display: block;
     text-align: center;
@@ -233,6 +233,13 @@ footer {
 .review h2, 
 .review h3 {
     text-align: left;
+}
+
+#reviewSections {
+    display: grid;
+    grid-template-columns: 1fr;
+	grid-gap: 25px;
+	place-items: center;
 }
 
 .exploreReviews {
@@ -438,6 +445,25 @@ input[type="text"] {
     .hero h2 {
         grid-column: span 2;
     }
+
+    .callToExplore {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .callToExplore img {
+        grid-row: span 3;
+    }
+
+    .callMyShelf {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .callMyShelf img {
+        grid-row: span 3;
+    }
+
     .callMyTBR {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
@@ -448,6 +474,10 @@ input[type="text"] {
 
     .callMyTBR img {
         grid-row: span 2;
+    }
+
+    #reviewSections {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
 
 }
